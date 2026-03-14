@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 – Front-End Development - Arnold Pring</title>
+    <meta name="description" content="WDD 231 – Front-End Development course assignment portal by Arnold Pring. Access course materials, assignments, and resources for dynamic web development.">
+    <meta name="author" content="Arnold Pring">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/smaller.css">
+    <link rel="stylesheet" href="styles/larger.css">    
+
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+
+</head>
+
+<body>
+
+    <header>
+        <img src="images/motor.svg" alt="site logo" width="30" height="30">
+        <span>Arnold Site Title</span>
+        <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+    </header>
+
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <h1>Home</h1>
+
+        <section class="card">
+            <h2>About Me</h2>
+            <p>Hello! My name is Arnold Pring. I am studying web development and learning HTML, CSS, and JavaScript. I am passionate about creating dynamic and user-friendly websites. In my free time, I enjoy riding motorcycles and exploring new places.</p>
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>Student Photo</h2>
+            <img src="images/arnold.webp" alt="Photo of Arnold Pring" width="250" height="250">
+        </section>
+
+        <section class="card">
+            <h2>Web Certificate Courses</h2>
+        
+            <div class="buttons">
+                <button id="all">All</button>
+                <button id="wdd">WDD</button>
+                <button id="cse">CSE</button>
+            </div>
+        
+            <div id="courses" class="courses"></div>
+        
+            <p id="totalCredits"></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="social"> 
+            <a href="https://www.facebook.com/arnold.pring" target="_blank"><img src="images/facebook.svg" alt="Facebook" width="16" height="16"></a>
+            <a href="https://wa.me/1234567890" target="_blank"><img src="images/whatsapp.svg" alt="WhatsApp" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/in/arnold-pring-046583138" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn" width="16" height="16"></a>
+            <a href="https://github.com/noldie03" target="_blank"><img src="images/github.svg" alt="GitHub" width="16" height="16"></a>
+        </div>
+        <p>©<span id="currentyear"></span> Arnold Pring - Philippines</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
