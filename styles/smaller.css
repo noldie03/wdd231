@@ -123,6 +123,11 @@ h1 {
     width: 100%;
 }
 
+.buttons button:hover {
+    background-color: var(--accent-color);
+
+}
+
 .course-card {
     border: 1px solid var(--border-color);
     padding: 10px;
@@ -132,7 +137,7 @@ h1 {
 }
 
 .completed {
-    background: var(--accent-color);
+    background: var(--border-color);
 }
 
 
