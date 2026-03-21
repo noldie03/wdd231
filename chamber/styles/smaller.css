@@ -68,7 +68,7 @@ header span {
 .navigation a {
     display: block;
     padding: .8rem 10px;
-    color: white;
+    color: var(--background-color);
     text-decoration: none;
     border-bottom: solid 1px var(--border-color);
 }
@@ -87,6 +87,40 @@ h1 {
 
 
 /************ Member cards ************/
+#view-controls {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#gridBtn,
+#listBtn {
+    padding: 0.75rem 1.5rem;
+    border: 2px solid var(--primary-color);
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#gridBtn:hover,
+#listBtn:hover {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+#gridBtn:active,
+#listBtn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
 #members {
     display: grid;
     gap: 1rem;
@@ -102,8 +136,27 @@ h1 {
     display: block;
 }
 
+#members.list-view .member-card {
+    display: block;
+    padding: 1.5rem;
+    margin-bottom: 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+#members.list-view .member-card:nth-child(odd) {
+    background-color: var(--border-color);
+}
+
+#members.list-view .member-card:nth-child(even) {
+    background-color: var(--background-color);
+}
+
+#members.list-view .member-card img {
+    display: none;
+}
+
 .member-card {
-    background: white;
+    background: var(--background-color);
     padding: 1rem;
     border-radius: 10px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
@@ -114,6 +167,28 @@ h1 {
     width: 100%;
     height: auto;
     border-radius: 8px;
+}
+
+.member-card h3 {
+    margin-top: 0.5rem;
+    color: var(--primary-color);
+}
+
+.member-card p {
+    margin: 0.75rem 0;
+    font-size: 0.95rem;
+    color: var(--primary-color);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.member-card a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.member-card a:hover {
+    text-decoration: underline;
 }
 
 
@@ -180,4 +255,3 @@ footer {
 .social a:hover {
     background-color: var(--accent-color);
 }
-

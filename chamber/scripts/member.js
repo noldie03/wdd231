@@ -5,7 +5,7 @@ const listBtn = document.getElementById("listBtn");
 // Fetch and display members
 async function loadMembers() {
     try {
-        const response = await fetch("data/members.json");
+        const response = await fetch("data/member.json");
         const members = await response.json();
 
         membersContainer.innerHTML = ""; // Clear container
@@ -15,7 +15,7 @@ async function loadMembers() {
             card.classList.add("member-card");
 
             card.innerHTML = `
-        <img src="images/${member.image}" alt="${member.name}">
+        <img src="${member.image}" alt="${member.name}">
         <h3>${member.name}</h3>
         <p><strong>Address:</strong> ${member.address}</p>
         <p><strong>Phone:</strong> ${member.phone}</p>
