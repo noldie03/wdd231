@@ -25,10 +25,53 @@
     <link rel="stylesheet" href="styles/smaller.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="icon" href="favicon.ico">
+
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/member.js" defer></script>
 </head>
 
 <body>
 
+    <header>
+        <img src="favicon.ico" alt="site logo" width="30" height="30">
+        <span>Chamber of Commerce</span>
+        <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+    </header>
+    
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="#">Directory</a></li>
+            <li><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="view-controls">
+            <button id="gridBtn">Grid View</button>
+            <button id="listBtn">List View</button>
+        </div>
+        
+        <section id="members" class="grid-view">
+            <!-- Cards will be injected here by JavaScript -->
+        </section>
+    </main>
+
+    <footer>
+        <div class="social">
+            <a href="https://www.facebook.com/arnold.pring" target="_blank"><img src="images/facebook.svg" alt="Facebook"
+                    width="16" height="16"></a>
+            <a href="https://wa.me/1234567890" target="_blank"><img src="images/whatsapp.svg" alt="WhatsApp" width="16"
+                    height="16"></a>
+            <a href="https://www.linkedin.com/in/arnold-pring-046583138" target="_blank"><img src="images/linkedin.svg"
+                    alt="LinkedIn" width="16" height="16"></a>
+            <a href="https://github.com/noldie03" target="_blank"><img src="images/github.svg" alt="GitHub" width="16"
+                    height="16"></a>
+        </div>
+        <p>©<span id="currentyear"></span> Arnold Pring - Philippines</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 
 </html>

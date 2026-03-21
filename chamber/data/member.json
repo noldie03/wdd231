@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Sunshine Bakery",
+        "address": "123 Main St, Springfield, USA",
+        "phone": "555-1234",
+        "website": "https://sunshinebakery.com",
+        "image": "images/company1.jpg",
+        "membership": 3,
+        "notes": "Famous for artisan bread"
+    },
+    {
+        "name": "TechWorks",
+        "address": "456 Elm St, Springfield, USA",
+        "phone": "555-5678",
+        "website": "https://techworks.com",
+        "image": "images/company2.jpg",
+        "membership": 2,
+        "notes": "IT services and support"
+    },
+    {
+        "name": "Green Gardens",
+        "address": "789 Oak St, Springfield, USA",
+        "phone": "555-9012",
+        "website": "https://greengardens.com",
+        "image": "images/company3.jpg",
+        "membership": 1,
+        "notes": "Landscape and gardening"
+    },
+    {
+        "name": "Bright Books",
+        "address": "321 Maple St, Springfield, USA",
+        "phone": "555-3456",
+        "website": "https://brightbooks.com",
+        "image": "images/company4.jpg",
+        "membership": 3,
+        "notes": "Local bookstore"
+    },
+    {
+        "name": "Fresh Market",
+        "address": "654 Pine St, Springfield, USA",
+        "phone": "555-7890",
+        "website": "https://freshmarket.com",
+        "image": "images/company5.jpg",
+        "membership": 2,
+        "notes": "Organic grocery store"
+    },
+    {
+        "name": "City Gym",
+        "address": "987 Cedar St, Springfield, USA",
+        "phone": "555-2345",
+        "website": "https://citygym.com",
+        "image": "images/company6.jpg",
+        "membership": 3,
+        "notes": "Fitness and wellness"
+    },
+    {
+        "name": "Sunny Café",
+        "address": "147 Birch St, Springfield, USA",
+        "phone": "555-6789",
+        "website": "https://sunnycafe.com",
+        "image": "images/company7.jpg",
+        "membership": 1,
+        "notes": "Local café and bakery"
+    }
+]

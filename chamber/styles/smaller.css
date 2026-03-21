@@ -1,0 +1,183 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #000000;
+    --secondary-color: #444444;
+    --accent-color: #888888;
+    --background-color: #ffffff;
+    --border-color: #cccccc;
+}
+
+/************ header ************/
+header {
+    display: grid;
+    grid-template-columns: 30px auto 44px;
+    padding: 5px 0 5px 10px;
+    align-items: end;
+    border-bottom: solid 1px var(--border-color);
+    column-gap: 10px;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+header span {
+    font-size: 1.2em;
+}
+
+.hamburger {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 1.5em;
+    font-family: verdana, sans-serif;
+}
+
+.hamburger::before {
+    content: "\2630";
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+
+/************ navigation ************/
+.navigation {
+    display: none;
+    background-color: var(--secondary-color);
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: .8rem 10px;
+    color: white;
+    text-decoration: none;
+    border-bottom: solid 1px var(--border-color);
+}
+
+.navigation li.current {
+    background-color: var(--accent-color);
+}
+
+.navigation a:hover {
+    background-color: var(--primary-color);
+}
+
+h1 {
+    margin-left: 10px;
+}
+
+
+/************ Member cards ************/
+#members {
+    display: grid;
+    gap: 1rem;
+}
+
+/* Grid view */
+#members.grid-view {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/* List view */
+#members.list-view {
+    display: block;
+}
+
+.member-card {
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+.member-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+/************ course ************/
+.buttons {
+    font-size: 1.5em;
+    padding: 10px;
+    display: flex;
+    column-gap: 10px;
+}
+
+.buttons button {
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+}
+
+.buttons button:hover {
+    background-color: var(--accent-color);
+
+}
+
+.course-card {
+    border: 1px solid var(--border-color);
+    padding: 10px;
+    margin: 5px;
+    background: var(--background-color);
+    text-align: center;
+}
+
+.completed {
+    background: var(--border-color);
+}
+
+
+/************ footer ************/
+footer {
+    background-color: var(--background-color);
+    text-align: center;
+    padding: 1rem 10px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: var(--border-color) solid 1px;
+    border-radius: 10px;
+}
+
+.social img {
+    width: 24px;
+    height: 24px;
+}
+
+.social a:hover {
+    background-color: var(--accent-color);
+}
+

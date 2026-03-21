@@ -1,0 +1,57 @@
+@media only screen and (min-width: 768px) {
+
+    header, main, nav, footer {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+
+    header {
+        grid-template-columns: 30px auto;
+        
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+        border-bottom: solid 1px var(--border-color);
+    }
+
+    .navigation ul {
+        display: flex;
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+    /************* split cards *************/
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 0.5rem;
+    }
+
+    h1 {
+        grid-column: 1 / 3;
+    }
+
+    .card:nth-of-type(3) {
+        grid-column: 1 / 3;
+    }
+
+    /************* courses cards *************/
+    .courses {
+        font-size: 1.5em;
+        padding: 10px;
+        display: flex;
+        column-gap: 10px;
+    }
+    
+    .course-card {
+        flex: 1;
+    }
+    
+}
