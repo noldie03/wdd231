@@ -86,7 +86,12 @@ h1 {
 }
 
 
-/************ Member cards ************/
+/************ Controls ************/
+.intro {
+    text-align: center;
+    margin: 2rem 0;
+    padding: 0 10px;
+}
 #view-controls {
     display: flex;
     gap: 1rem;
@@ -112,13 +117,13 @@ h1 {
 #listBtn:hover {
     background-color: var(--primary-color);
     color: var(--background-color);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 12px var(--accent-color);
 }
 
 #gridBtn:active,
 #listBtn:active {
     transform: translateY(0);
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 6px var(--accent-color);
 }
 
 #members {
@@ -159,7 +164,7 @@ h1 {
     background: var(--background-color);
     padding: 1rem;
     border-radius: 10px;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 8px var(--border-color);
     margin-bottom: 1rem;
 }
 
