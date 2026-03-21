@@ -15,7 +15,7 @@ async function loadMembers() {
             card.classList.add("member-card");
 
             card.innerHTML = `
-        <img src="${member.image}" alt="${member.name}">
+        <img src="${member.image}" alt="${member.name}" width="400" height="250">
         <h3>${member.name}</h3>
         <p><strong>Address:</strong> ${member.address}</p>
         <p><strong>Phone:</strong> ${member.phone}</p>
