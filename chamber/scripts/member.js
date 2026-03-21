@@ -5,7 +5,7 @@ const listBtn = document.getElementById("listBtn");
 // Fetch and display members
 async function loadMembers() {
     try {
-        const response = await fetch("data/member.json");
+        const response = await fetch("data/members.json");
         const members = await response.json();
 
         membersContainer.innerHTML = ""; // Clear container
