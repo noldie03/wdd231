@@ -53,4 +53,50 @@
         flex: 1;
     }
 
+    .home-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /************ hero ************/
+    .hero {
+        max-height: 500px;
+    }
+
+    .hero-text {
+        max-width: 600px;
+        padding: 2rem;
+    }
+
+    .hero-text h1 {
+        font-size: 2.5em;
+    }
+
+    .hero-text p {
+        font-size: 1.1em;
+    }
+
+    .cta {
+        padding: 15px 30px;
+        font-size: 1em;
+    }
+
+    /************ spotlight cards ************/
+    #spotlights {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .spotlight-card {
+        padding: 2rem;
+    }
+
+    .spotlight-header img {
+        width: 300px;
+        height: 150px;
+    }
+
+    .spotlight-content h3 {
+        font-size: 1.4em;
+    }
+
 }
