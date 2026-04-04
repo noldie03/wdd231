@@ -4,31 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 231 – Front-End Development - Directory</title>
-    <meta name="description"
-        content="Directory of members of the Chamber of Commerce. Find contact information and details about local businesses in the community.">
+    <title>WDD 231 – Membership Thank You</title>
+    <meta name="description" content="Thank you for joining the Chamber of Commerce.">
     <meta name="author" content="Arnold Pring">
 
-    <meta property="og:title" content="Chamber Directory">
-    <meta property="og:description" content="Explore local businesses and members of the Chamber of Commerce.">
+    <meta property="og:title" content="Chamber Join Page">
+    <meta property="og:description"
+        content="Join the Chamber of Commerce. Discover our mission, upcoming events, weather updates, and how to become a member.">
     <meta property="og:image" content="https://noldie03.github.io/wdd231/chamber/images/chamber.jpg">
     <meta property="og:image:width" content="800">
     <meta property="og:image:height" content="450">
-    <meta property="og:url" content="https://noldie03.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://noldie03.github.io/wdd231/chamber/join.html">
     <meta property="og:type" content="website">
-
+    
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap" rel="stylesheet">
-
+    
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/smaller.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="icon" href="favicon.ico">
-
+    
     <script src="scripts/dates.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/member.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
+    <script src="scripts/modal.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
 </head>
 
 <body>
@@ -38,35 +42,38 @@
         <span>Chamber of Commerce</span>
         <button id="nav-button" class="hamburger" aria-label="navigation"></button>
     </header>
-    
+
     <nav id="nav-bar" class="navigation">
         <ul>
             <li><a href="index.html">Homepage</a></li>
-            <li class="current"><a href="directory.html">Directory</a></li>
+            <li><a href="directory.html">Directory</a></li>
             <li><a href="join.html">Join</a></li>
             <li><a href="final-project.html">Final Project</a></li>
         </ul>
     </nav>
 
     <main>
-        <div class="intro">
-            <h1>Directory</h1>
-            <p>Explore our directory of local businesses and members of the Chamber of Commerce. Find contact information and details about each member to connect with the community.</p>
-        </div>
-        <div id="view-controls">
-            <button id="gridBtn">Grid View</button>
-            <button id="listBtn">List View</button>
-        </div>
-        
-        <section id="members" class="grid-view">
-            <!-- Cards will be injected here by JavaScript -->
+        <section class="thankyou-section">
+            <h2>Thank You for Joining!</h2>
+            <p>We have received your membership application. Here’s the information you submitted:</p>
+    
+            <div class="submitted-info">
+                <p><strong>First Name:</strong> <span id="fname"></span></p>
+                <p><strong>Last Name:</strong> <span id="lname"></span></p>
+                <p><strong>Email:</strong> <span id="email"></span></p>
+                <p><strong>Mobile Number:</strong> <span id="phone"></span></p>
+                <p><strong>Business/Organization Name:</strong> <span id="org"></span></p>
+                <p><strong>Submission Date:</strong> <span id="timestamp"></span></p>
+            </div>
+    
+            <a href="index.html" class="back-home">← Back to Homepage</a>
         </section>
     </main>
 
     <footer>
         <div class="social">
-            <a href="https://www.facebook.com/arnold.pring" target="_blank"><img src="images/facebook.svg" alt="Facebook"
-                    width="16" height="16"></a>
+            <a href="https://www.facebook.com/arnold.pring" target="_blank"><img src="images/facebook.svg"
+                    alt="Facebook" width="16" height="16"></a>
             <a href="https://wa.me/1234567890" target="_blank"><img src="images/whatsapp.svg" alt="WhatsApp" width="16"
                     height="16"></a>
             <a href="https://www.linkedin.com/in/arnold-pring-046583138" target="_blank"><img src="images/linkedin.svg"

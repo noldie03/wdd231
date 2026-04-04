@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 – Front-End Development - Join Page</title>
+    <meta name="description"
+        content="Join page of the Chamber of Commerce. Learn about our mission, upcoming events, weather information, and how to become a member.">
+    <meta name="author" content="Arnold Pring">
+
+    <meta property="og:title" content="Chamber Join Page">
+    <meta property="og:description"
+        content="Join the Chamber of Commerce. Discover our mission, upcoming events, weather updates, and how to become a member.">
+    <meta property="og:image" content="https://noldie03.github.io/wdd231/chamber/images/chamber.jpg">
+    <meta property="og:image:width" content="800">
+    <meta property="og:image:height" content="450">
+    <meta property="og:url" content="https://noldie03.github.io/wdd231/chamber/join.html">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/smaller.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/member.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
+    <script src="scripts/modal.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <img src="favicon.ico" alt="site logo" width="30" height="30">
+        <span>Chamber of Commerce</span>
+        <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+    </header>
+
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="index.html">Homepage</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li class="current"><a href="join.html">Join</a></li>
+            <li><a href="final-project.html">Final Project</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="join-container">
+            <section class="form-section">
+                <h2>Join Our Chamber</h2>
+                <form method="get" action="thankyou.html">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="fname" required title="Enter your first name"
+                        autocomplete="given-name">
+
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lname" required title="Enter your last name"
+                        autocomplete="family-name">
+
+                    <label for="orgtitle">Organizational Title</label>
+                    <input type="text" id="orgtitle" name="orgtitle"
+                        title="At least 7 characters. Letters, hyphens, and spaces only"
+                        autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}">
+
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required title="Enter a valid email address"
+                        placeholder="example@email.com" autocomplete="email">
+
+                    <label for="phone">Mobile Phone</label>
+                    <input type="tel" id="phone" name="phone" required title="Enter your mobile number"
+                        autocomplete="tel">
+
+                    <label for="org">Organization Name</label>
+                    <input type="text" id="org" name="org" required title="Enter your organization name"
+                        autocomplete="organization">
+
+                    <label for="membership">Membership Level</label>
+                    <select id="membership" name="membership" required>
+                        <option value="">Select a membership</option>
+                        <option value="np">NP Membership</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+
+                    <label for="description">Business Description</label>
+                    <textarea id="description" name="description" title="Describe your business"></textarea>
+
+                    <input type="hidden" id="timestamp" name="timestamp">
+                    <button type="submit">Apply for Membership</button>
+                </form>
+            </section>
+
+            <section class="membership-cards">
+                <h2>Membership Levels</h2>
+                <div class="card">
+                    <h3>NP Membership</h3>
+                    <button data-modal="npModal">Learn More</button>
+                </div>
+
+                <div class="card">
+                    <h3>Bronze Membership</h3>
+                    <button data-modal="bronzeModal">Learn More</button>
+                </div>
+
+                <div class="card">
+                    <h3>Silver Membership</h3>
+                    <button data-modal="silverModal">Learn More</button>
+                </div>
+
+                <div class="card">
+                    <h3>Gold Membership</h3>
+                    <button data-modal="goldModal">Learn More</button>
+                </div>
+            </section>
+        </div>
+
+        <dialog id="npModal">
+            <button class="close" aria-label="Close modal">&times;</button>
+            <h3>NP Membership</h3>
+            <p>No fee. Designed for non-profit organizations.</p>
+        </dialog>
+
+        <dialog id="bronzeModal">
+            <button class="close" aria-label="Close modal">&times;</button>
+            <h3>Bronze Membership</h3>
+            <p>Includes basic listing and networking opportunities.</p>
+        </dialog>
+
+        <dialog id="silverModal">
+            <button class="close" aria-label="Close modal">&times;</button>
+            <h3>Silver Membership</h3>
+            <p>Includes featured listings and event promotions.</p>
+        </dialog>
+
+        <dialog id="goldModal">
+            <button class="close" aria-label="Close modal">&times;</button>
+            <h3>Gold Membership</h3>
+            <p>All benefits including spotlight features and premium ads.</p>
+        </dialog>
+    </main>
+
+    <footer>
+        <div class="social">
+            <a href="https://www.facebook.com/arnold.pring" target="_blank"><img src="images/facebook.svg"
+                    alt="Facebook" width="16" height="16"></a>
+            <a href="https://wa.me/1234567890" target="_blank"><img src="images/whatsapp.svg" alt="WhatsApp" width="16"
+                    height="16"></a>
+            <a href="https://www.linkedin.com/in/arnold-pring-046583138" target="_blank"><img src="images/linkedin.svg"
+                    alt="LinkedIn" width="16" height="16"></a>
+            <a href="https://github.com/noldie03" target="_blank"><img src="images/github.svg" alt="GitHub" width="16"
+                    height="16"></a>
+        </div>
+        <p>©<span id="currentyear"></span> Arnold Pring - Philippines</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
