@@ -488,6 +488,9 @@ dialog {
     padding: 1.5rem;
     max-width: 300px;
     width: 90%;
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 dialog::backdrop {
@@ -550,13 +553,6 @@ dialog button {
         transform: translateY(0);
     }
 }
-
-dialog {
-    opacity: 0;
-    transform: scale(0.9);
-    transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
 
 dialog[open] {
     opacity: 1;
